@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator API Test</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-5">
+    <h1 class="mb-4">Calculator API Test</h1>
+
+    <h2>Add Two Numbers</h2>
+    <form action="http://localhost:8888/addtwonumbers" method="get" class="mb-4">
+        <div class="form-group">
+            <label for="numberOne">Number One:</label>
+            <input type="number" id="numberOne" name="numberOne" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="numberTwo">Number Two:</label>
+            <input type="number" id="numberTwo" name="numberTwo" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Add</button>
+    </form>
+
+    <h2>Subtract Two Numbers</h2>
+    <form action="http://localhost:8888/subtracttwonumbers" method="get" class="mb-4">
+        <div class="form-group">
+            <label for="numberOne">Number One:</label>
+            <input type="number" id="numberOne" name="numberOne" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="numberTwo">Number Two:</label>
+            <input type="number" id="numberTwo" name="numberTwo" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Subtract</button>
+    </form>
+
+    <h2>Multiply Two Numbers</h2>
+    <form action="http://localhost:8888/multiplytwonumbers" method="get" class="mb-4">
+        <div class="form-group">
+            <label for="numberOne">Number One:</label>
+            <input type="number" id="numberOne" name="numberOne" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="numberTwo">Number Two:</label>
+            <input type="number" id="numberTwo" name="numberTwo" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Multiply</button>
+    </form>
+
+    <h2>Divide Two Numbers</h2>
+    <form action="http://localhost:8888/dividetwonumbers" method="get" class="mb-4">
+        <div class="form-group">
+            <label for="numberOne">Number One:</label>
+            <input type="number" id="numberOne" name="numberOne" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="numberTwo">Number Two:</label>
+            <input type="number" id="numberTwo" name="numberTwo" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Divide</button>
+    </form>
+
+    <h2>Square a Number</h2>
+    <form action="http://localhost:8888/square" method="get" class="mb-4">
+        <div class="form-group">
+            <label for="number">Number:</label>
+            <input type="number" id="number" name="number" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Square</button>
+    </form>
+
+    <h2>Cube a Number</h2>
+    <form action="http://localhost:8888/cube" method="get" class="mb-4">
+        <div class="form-group">
+            <label for="number">Number:</label>
+            <input type="number" id="number" name="number" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Cube</button>
+    </form>
+
+    <h2>Calculate VAT</h2>
+    <form action="http://localhost:8888/calculatevat" method="get" class="mb-4">
+        <div class="form-group">
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" name="amount" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Calculate VAT</button>
+    </form>
+
+    <h2>Calculate Nett</h2>
+    <form action="http://localhost:8888/calculatenett" method="get" class="mb-4">
+        <div class="form-group">
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" name="amount" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Calculate Nett</button>
+    </form>
+</div>
+</body>
+</html>
